@@ -2,7 +2,7 @@ import React from 'react'
 
 function Policies() {
   return (
-    <div>Policies</div>
+    <div className='h-screen'>Policies</div>
   )
 }
 

@@ -57,7 +57,7 @@ function FAQ() {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <>
+    <div className='h-screen'>
       <h2 className='text-2xl font-semibold mb-5'>
         Frequently Asked Questions
       </h2>
@@ -80,7 +80,7 @@ function FAQ() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
