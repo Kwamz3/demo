@@ -5,20 +5,23 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./components/Home";
-import "./App.css"
-
+import "./App.css";
+import { Theme } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          {/* <Route path='/about' element={<About />} />
+    <Theme>
+      <Router>
+        <div>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            {/* <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} /> */}
-        </Routes>
-      </div>
-    </Router>
+          </Routes>
+        </div>
+      </Router>
+    </Theme>
   );
 }
 
