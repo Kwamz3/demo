@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Badge, Flex } from "@radix-ui/themes";
 import {
   BrowserRouter as Router,
@@ -51,7 +51,9 @@ function Home() {
   };
 
 
+
   return (
+
     <>
       <div className={`flex flex-row max-sm: overflow-hidden `}>
         <section className='h-screen bg-blue-500 text-white w-3/5 flex flex-col justify-center items-center p-5'>
@@ -80,7 +82,7 @@ function Home() {
         <section className='bg-slate-50 text-black h-screen w-4/5 py- p-10 flex flex-col overflow-y-auto'>
           {/* routes-WIS,policices,faq,promos,about */}
           <h1>{normalizedPath}</h1>
-          {normalizedPath === ""? <FAQ /> : <Outlet />}
+          {normalizedPath === "" ? <FAQ /> : <Outlet />}
           <Flex
             direction={"row"}
             justify={"between"}
@@ -101,7 +103,10 @@ function Home() {
           </Flex>
         </section>
       </div>
+
+
     </>
+
   );
 }
 

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@microsoft/applicationinsights-react-js": "^17.3.4",
+    "@microsoft/applicationinsights-web": "^3.3.4",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/themes": "^3.1.6",
     "@testing-library/jest-dom": "^5.17.0",
