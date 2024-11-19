@@ -11,13 +11,14 @@ const reactPlugin = new ReactPlugin();
 
 const appInsights = new ApplicationInsights({
   config: {
-    connectionString: 'InstrumentationKey=a814f79a-52c5-4d54-807f-8165a01bd9ed;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/;ApplicationId=80709ac6-9cb8-4fb6-bdb0-cb3166297576',
+    connectionString: 'InstrumentationKey=b7718f6f-691f-4018-99ff-941eb264376b;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/;ApplicationId=9ab347f0-9f15-4d02-94dc-2c504419ca52',
     extensions: [reactPlugin],
     enableAutoRouteTracking: true,
     extensionConfig: {
       [reactPlugin.identifier]: { history: browserHistory }
     }
-  } });
+  }
+});
 
 appInsights.loadAppInsights();
 appInsights.trackPageView();
